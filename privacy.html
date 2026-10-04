@@ -4,97 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Lumi</title>
+    <meta name="description" content="Lumi's privacy policy. Lumi works entirely on your device. No account, no servers, no tracking, no data collection.">
     <style>
+        :root {
+            --bg: #f5f5f7;
+            --card: #ffffff;
+            --text: #1d1d1f;
+            --text-soft: #555555;
+            --text-heading: #333333;
+            --muted: #86868b;
+            --link: #007aff;
+            --rule: rgba(0,0,0,0.07);
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --card: #1c1c1e;
+                --text: #f5f5f7;
+                --text-soft: #c7c7cc;
+                --text-heading: #e5e5ea;
+                --muted: #98989f;
+                --link: #0a84ff;
+                --rule: rgba(255,255,255,0.1);
+            }
+        }
+        html { -webkit-text-size-adjust: 100%; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
+            line-height: 1.65;
             max-width: 720px;
             margin: 0 auto;
             padding: 40px 20px;
-            color: #1d1d1f;
-            background: #f5f5f7;
+            color: var(--text);
+            background: var(--bg);
         }
         .card {
-            background: white;
+            background: var(--card);
             border-radius: 16px;
             padding: 40px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.08);
         }
-        h1 { font-size: 28px; margin-top: 0; color: #1d1d1f; }
-        h2 { font-size: 20px; margin-top: 32px; color: #333; }
-        p, li { color: #555; }
-        .footer { text-align: center; margin-top: 24px; font-size: 13px; color: #999; }
-        a { color: #007aff; text-decoration: none; }
+        h1 { font-size: 28px; margin-top: 0; color: var(--text); }
+        h2 { font-size: 20px; margin-top: 36px; color: var(--text-heading); }
+        h3 { font-size: 16px; margin-top: 24px; color: var(--text-heading); }
+        p, li { color: var(--text-soft); }
+        ul { padding-left: 22px; }
+        li { margin-bottom: 8px; }
+        .lede {
+            color: var(--text);
+            font-size: 17px;
+            background: var(--bg);
+            border: 1px solid var(--rule);
+            border-radius: 12px;
+            padding: 16px 18px;
+            margin: 0 0 8px;
+        }
+        .footer { text-align: center; margin-top: 24px; font-size: 13px; color: var(--muted); }
+        a { color: var(--link); text-decoration: none; }
         a:hover { text-decoration: underline; }
+        @media (max-width: 520px) {
+            body { padding: 20px 14px; }
+            .card { padding: 26px 22px; }
+        }
     </style>
 </head>
 <body>
     <div class="card">
         <h1>Privacy Policy</h1>
-        <p><strong>Last updated:</strong> July 27, 2026</p>
+        <p><strong>Last updated:</strong> October 4, 2026</p>
 
-        <h2>1. Introduction</h2>
-        <p>Lumi ("the App") is developed and operated by Wandering Architect ("we," "our," or "us"). We are committed to protecting your privacy. This policy explains what data is collected, how it is used, and your rights.</p>
+        <p class="lede"><strong>The short version:</strong> Lumi has no servers, no account, and no analytics. Everything you put into Lumi stays on your device. We cannot see your data because it never reaches us.</p>
 
-        <h2>2. Data We Collect</h2>
+        <h2>1. Who We Are</h2>
+        <p>Lumi ("the App") is developed and operated by Wandering Architect ("we," "our," or "us"). This policy explains what leaves your device, what doesn't, and what you can control.</p>
 
-        <h3>2.1 Data You Provide</h3>
-        <p>All data you create in the app — tasks, projects, chat messages, reminders, and settings — is stored <strong>locally on your device</strong> and optionally synced via <strong>Apple iCloud</strong> to your other devices signed into the same Apple ID. We do not have servers that store this data, and we do not have access to it.</p>
-
-        <h3>2.2 AI Chat Data</h3>
-        <p>When you use the AI chat feature, your messages are sent to a third-party AI API (currently <strong>DeepSeek</strong>, via a proxy server at 43.165.126.123) to generate responses. This data is transmitted for processing and is not stored by us. Please refer to <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html" target="_blank">DeepSeek's Privacy Policy</a> for how they handle your data during inference.</p>
-
-        <h3>2.3 iCloud Sync</h3>
-        <p>If you enable iCloud Sync, your task and project data is stored in your personal iCloud account using Apple's CloudKit service. This data is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a> and is only accessible by devices signed into your Apple ID.</p>
-
-        <h3>2.4 Subscription Data</h3>
-        <p>Subscription purchases and entitlements are handled entirely by <strong>Apple's StoreKit</strong> framework. We do not collect, process, or store your payment information. All payment processing is managed by Apple. See <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a> for details.</p>
-
-        <h3>2.5 Diagnostic Data</h3>
-        <p>The app includes an optional diagnostics feature that logs directive execution results locally on your device. This data never leaves your device unless you choose to share it.</p>
-
-        <h2>3. How We Use Your Data</h2>
+        <h2>2. The Short Answer</h2>
         <ul>
-            <li><strong>Task &amp; Project Management:</strong> Data you create is stored locally to provide the core functionality of the app.</li>
-            <li><strong>AI Chat:</strong> Chat messages are transmitted to the AI API solely to generate responses. They are not stored on our servers.</li>
-            <li><strong>iCloud Sync:</strong> Data is synced across your devices using your personal iCloud account.</li>
-            <li><strong>Token Tracking:</strong> AI token usage is tracked locally to manage trial and subscription quotas.</li>
+            <li><strong>No account.</strong> There is nothing to sign up for and no user identifier.</li>
+            <li><strong>No analytics or tracking.</strong> The App contains no analytics SDK, no advertising SDK, and no crash-reporting service.</li>
+            <li><strong>No network calls.</strong> The App contains no networking code. It cannot transmit your data anywhere, because it has no way to.</li>
+            <li><strong>No data sale or sharing.</strong> We do not sell, rent, trade, or share your personal information with anyone.</li>
+            <li><strong>No in-app purchases or subscriptions.</strong> Lumi has nothing to buy.</li>
         </ul>
 
-        <h2>4. Data Sharing</h2>
-        <p>We do <strong>not</strong> sell, rent, or share your personal data with third parties. The only external data transmissions are:</p>
+        <h2>3. Data Stored on Your Device</h2>
+        <p>Everything you create in the App is written to local storage on your device. This includes:</p>
         <ul>
-            <li><strong>Chat messages to the AI API</strong> (DeepSeek via proxy) — for generating AI responses</li>
-            <li><strong>iCloud data sync</strong> — via Apple CloudKit, if you enable the feature</li>
-            <li><strong>Subscription verification</strong> — via Apple StoreKit, handled entirely by Apple</li>
+            <li>Tasks, projects, notes, and their completion state</li>
+            <li>Dates, deadlines, reminders, and recurrence rules</li>
+            <li>Your conversation with Lumi, including anything you type into it</li>
+            <li>Preferences and settings, including whether you enabled iCloud sync</li>
         </ul>
+        <p>This data stays on your device. We have no access to it, cannot view it, and cannot recover it for you.</p>
 
-        <h2>5. Data Security</h2>
-        <p>Your data resides on your device and (optionally) in your personal iCloud account. We do not operate our own servers that store user data. We recommend keeping your device and Apple ID secure with strong passwords and two-factor authentication.</p>
-
-        <h2>6. Your Rights</h2>
-        <p>Since all your data is stored locally on your device and in your personal iCloud account, you have full control. You can:</p>
+        <h2>4. iCloud Sync (Optional)</h2>
+        <p>If you turn on iCloud sync in Settings, your tasks, projects, and conversation history are stored in <strong>your own personal iCloud account</strong> using Apple's iCloud Key-Value Store, which keeps your devices in step.</p>
         <ul>
-            <li>View all data within the app at any time</li>
-            <li>Delete individual items or clear all data from the app</li>
-            <li>Disable iCloud Sync in Settings to keep all data local-only</li>
-            <li>Uninstall the app to remove all local data</li>
-            <li>Request a full data export by contacting us</li>
+            <li>Your data goes to Apple, not to us. We cannot read it.</li>
+            <li>Only devices signed into your Apple ID receive it.</li>
+            <li>You can turn sync off at any time in Settings. Turning it off does not delete what is already synced, but nothing further is sent.</li>
+            <li>This feature is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</li>
         </ul>
+        <p>The App only asks iOS for access when you enable this yourself. It does not request an Apple Account sign-in merely by being opened.</p>
 
-        <h2>7. Children's Privacy</h2>
-        <p>Lumi is not directed at children under the age of 13. We do not knowingly collect data from children under 13.</p>
+        <h2>5. Notifications</h2>
+        <p>Reminders you set are scheduled as local notifications on your device. Notification text is generated on your device and is never transmitted anywhere.</p>
 
-        <h2>8. Changes to This Policy</h2>
-        <p>We may update this policy from time to time. Changes will be posted on this page, and the "Last updated" date will be revised. We encourage you to review this policy periodically.</p>
+        <h2>6. The App Widget</h2>
+        <p>The home screen widget reads from a shared container on your device to display your tasks. It does not access the network and does not transmit anything.</p>
 
-        <h2>9. Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-        <p><strong>Email:</strong> zhoufan97@qq.com</p>
+        <h2>7. Optional Local Metrics</h2>
+        <p>Lumi keeps a small set of counters on your device (for example, how often you undo an action) so you can see in Settings how the App is actually behaving for you. These counters:</p>
+        <ul>
+            <li>Are computed entirely on your device</li>
+            <li>Are never transmitted to us or anyone else</li>
+            <li>Can be exported by you as a JSON file, which only happens when you tap export and choose where to put it</li>
+        </ul>
+        <p>They exist to be read by you. There is no upload, no dashboard, and no collection.</p>
+
+        <h2>8. Data We Collect</h2>
+        <p><strong>None.</strong> We do not collect, transmit, sell, or receive any personal information from the App. We do not receive your tasks, your conversations, your device identifier, your IP address, or your usage data.</p>
+        <p>This is consistent with the App's App Store privacy label, which declares no data collected and no data used to track you.</p>
+
+        <h2>9. Third-Party Services</h2>
+        <p>The App does not integrate any third-party service. Specifically, it contains:</p>
+        <ul>
+            <li>No third-party AI or model API. Lumi's language understanding runs entirely on your device, and it does not send what you type anywhere.</li>
+            <li>No advertising or analytics SDK.</li>
+            <li>No social login, and no third-party account system.</li>
+        </ul>
+        <p>If a future version adds any of these, this policy will be updated before or at the time of release, and the App's App Store privacy label will be changed to match.</p>
+
+        <h2>10. Data Security</h2>
+        <p>Because your data is stored locally, its security is the security of your device and your Apple Account. We recommend a strong passcode and two-factor authentication.</p>
+
+        <h2>11. Your Control and Your Rights</h2>
+        <p>You are in full control of your data. You can:</p>
+        <ul>
+            <li>View and edit everything inside the App at any time</li>
+            <li>Delete any item, including sending it to the App's own Trash, where it can be permanently removed</li>
+            <li>Erase all data by deleting the App from your device</li>
+            <li>Turn off iCloud sync in Settings at any time</li>
+        </ul>
+        <p>If you have a question about your data that the App's own controls don't answer, contact us and we will respond to the best of our ability.</p>
+
+        <h2>12. Children's Privacy</h2>
+        <p>Lumi is not directed at children under 13. Because we collect no data from anyone, we collect none from children.</p>
+
+        <h2>13. Changes to This Policy</h2>
+        <p>If we change this policy, we will update the "Last updated" date above and post the revised version on this page. Material changes will also be described in the App's release notes.</p>
+
+        <h2>14. Contact</h2>
+        <p>Questions about this policy can be sent to <a href="mailto:zhoufan97@qq.com">zhoufan97@qq.com</a>.</p>
     </div>
 
     <div class="footer">
-        <a href="./">← Back to Home</a> &nbsp;·&nbsp; <a href="terms.html">Terms of Use</a>
+        <a href="./">← Back to Home</a> &nbsp;·&nbsp; <a href="terms.html">Terms of Use</a> &nbsp;·&nbsp; <a href="support.html">Support</a>
     </div>
 </body>
 </html>

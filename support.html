@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Lumi</title>
+    <meta name="description" content="Get help with Lumi: troubleshooting, how Lumi files what you write, and how to reach a human.">
+    <style>
+        :root {
+            --bg: #f5f5f7;
+            --card: #ffffff;
+            --text: #1d1d1f;
+            --text-soft: #555555;
+            --text-heading: #333333;
+            --muted: #86868b;
+            --link: #007aff;
+            --rule: rgba(0,0,0,0.07);
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --card: #1c1c1e;
+                --text: #f5f5f7;
+                --text-soft: #c7c7cc;
+                --text-heading: #e5e5ea;
+                --muted: #98989f;
+                --link: #0a84ff;
+                --rule: rgba(255,255,255,0.1);
+            }
+        }
+        html { -webkit-text-size-adjust: 100%; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.65;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            color: var(--text);
+            background: var(--bg);
+        }
+        .card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        h1 { font-size: 28px; margin-top: 0; color: var(--text); }
+        h2 { font-size: 20px; margin-top: 36px; color: var(--text-heading); }
+        h3 { font-size: 16px; margin-top: 26px; color: var(--text-heading); }
+        p, li { color: var(--text-soft); }
+        ul { padding-left: 22px; }
+        li { margin-bottom: 8px; }
+        .lede {
+            color: var(--text);
+            font-size: 17px;
+            background: var(--bg);
+            border: 1px solid var(--rule);
+            border-radius: 12px;
+            padding: 16px 18px;
+            margin: 0 0 8px;
+        }
+        .say {
+            background: var(--bg);
+            border: 1px solid var(--rule);
+            border-radius: 10px;
+            padding: 12px 14px;
+            margin: 10px 0;
+        }
+        .say strong { color: var(--text); }
+        .say code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+            font-size: 14px;
+            color: var(--text);
+            background: rgba(127,127,127,0.15);
+            border-radius: 5px;
+            padding: 2px 6px;
+        }
+        .footer { text-align: center; margin-top: 24px; font-size: 13px; color: var(--muted); }
+        a { color: var(--link); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        @media (max-width: 520px) {
+            body { padding: 20px 14px; }
+            .card { padding: 26px 22px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Support</h1>
+        <p><strong>Last updated:</strong> October 4, 2026</p>
+
+        <p class="lede">Lumi runs entirely on your device, which means most fixes belong to you: open the item and change it. Below are the answers to the things people ask most.</p>
+
+        <h2>Getting Started</h2>
+
+        <h3>How do I add something?</h3>
+        <p>Just write it in the chat, as a full sentence. Lumi reads the sentence and files the item for you.</p>
+        <div class="say">Try: <code>Call the dentist tomorrow at 10am</code></div>
+        <div class="say">Try: <code>Every Monday swim for 45 minutes</code></div>
+        <div class="say">Try: <code>I want to build a project called Renovation, with steps research, budget, and book a contractor</code></div>
+
+        <h3>How does Lumi decide where something goes?</h3>
+        <p>It reads the date out of your sentence. If it finds a date or a clear deadline, the item is scheduled. If it doesn't, the item is held without a date and you decide when it matters.</p>
+
+        <h3>What's the difference between the panels?</h3>
+        <ul>
+            <li><strong>Today</strong> — what you've asked for today, plus a short list of things that came due.</li>
+            <li><strong>Upcoming</strong> — everything with a date in the future, in order.</li>
+            <li><strong>Anytime</strong> — things worth doing, but with no date attached.</li>
+            <li><strong>Projects</strong> — work that has an outcome, with the steps under it.</li>
+        </ul>
+
+        <h2>Common Questions</h2>
+
+        <h3>Lumi put something in the wrong place. How do I fix it?</h3>
+        <p>Open the item and change it. Swipe left on it for quick moves, or press and hold the card for the full menu. If the App did something you didn't want, tap the Undo bar right after — every action it takes can be reversed.</p>
+
+        <h3>It didn't understand what I wrote.</h3>
+        <p>Lumi will say so rather than guess. It then offers two ways to rephrase it. Writing a shorter sentence with the date separated out usually helps most: <code>Buy QQQ on the 20th</code> is easier to read than <code>Remind me to buy QQQ on the 20th of every three months</code>.</p>
+
+        <h3>My reminders aren't arriving.</h3>
+        <p>Check, in order:</p>
+        <ul>
+            <li><strong>iOS Settings &gt; Notifications &gt; Lumi</strong> — make sure notifications are allowed.</li>
+            <li><strong>Focus modes</strong> — a Do Not Disturb or Sleep Focus will hold reminders until it ends.</li>
+            <li><strong>In Lumi</strong> — confirm the item still has the date and reminder you expect. An all-day item fires that morning; an item with a clock time fires shortly before it.</li>
+        </ul>
+
+        <h3>Why isn't everything I write being added?</h3>
+        <p>Lumi only creates items it can read clearly. It has no guessing and no second chances — if a sentence is too vague, it asks instead of inventing. Try naming the thing and the date.</p>
+
+        <h3>How do I sync to my other device?</h3>
+        <p>Turn on iCloud sync in Settings, and sign both devices into the same Apple Account. Lumi only asks for iCloud when you turn this on yourself.</p>
+
+        <h3>Where is my data? Can you see it?</h3>
+        <p>On your device, and in your own iCloud account if you enabled sync. Nowhere else. We have no servers and receive nothing. See the <a href="privacy.html">Privacy Policy</a>.</p>
+
+        <h3>How do I back up or move my data?</h3>
+        <p>Use iCloud sync if you have another device, or export your metrics from Settings. Because Lumi stores your tasks locally, there is no server-side copy we can send you.</p>
+
+        <h2>Troubleshooting</h2>
+
+        <h3>An item disappeared</h3>
+        <p>Check <strong>Today</strong> and <strong>Upcoming</strong>, then the <strong>Trash</strong> via the Lists menu. Items you complete go to the Logbook, and items you delete are recoverable from Trash until you empty it.</p>
+
+        <h3>The App didn't ask for a date</h3>
+        <p>That means it read your sentence as a complete item with no date. If you wanted one, add it: <code>Pay rent on the 1st</code>. If you wanted an open-ended item, <code>Renew my passport</code> is correct as written.</p>
+
+        <h3>Everything is in Anytime and nothing is scheduled</h3>
+        <p>Lumi schedules what it can read a date from. Add dates to the items that have deadlines, and they'll move themselves into Upcoming.</p>
+
+        <h2>Contact Us</h2>
+        <p>If the list above doesn't resolve it, email us. A description of what you typed and what Lumi did with it is the single most useful thing you can include.</p>
+        <p><strong>Email:</strong> <a href="mailto:zhoufan97@qq.com">zhoufan97@qq.com</a></p>
+        <p>We aim to reply within a few days.</p>
+    </div>
+
+    <div class="footer">
+        <a href="./">← Back to Home</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms of Use</a>
+    </div>
+</body>
+</html>

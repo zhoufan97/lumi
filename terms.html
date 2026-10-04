@@ -4,119 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Use - Lumi</title>
+    <meta name="description" content="Terms governing your use of Lumi, the on-device personal task assistant for iPhone and iPad.">
     <style>
+        :root {
+            --bg: #f5f5f7;
+            --card: #ffffff;
+            --text: #1d1d1f;
+            --text-soft: #555555;
+            --text-heading: #333333;
+            --muted: #86868b;
+            --link: #007aff;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --card: #1c1c1e;
+                --text: #f5f5f7;
+                --text-soft: #c7c7cc;
+                --text-heading: #e5e5ea;
+                --muted: #98989f;
+                --link: #0a84ff;
+            }
+        }
+        html { -webkit-text-size-adjust: 100%; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
+            line-height: 1.65;
             max-width: 720px;
             margin: 0 auto;
             padding: 40px 20px;
-            color: #1d1d1f;
-            background: #f5f5f7;
+            color: var(--text);
+            background: var(--bg);
         }
         .card {
-            background: white;
+            background: var(--card);
             border-radius: 16px;
             padding: 40px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.08);
         }
-        h1 { font-size: 28px; margin-top: 0; color: #1d1d1f; }
-        h2 { font-size: 20px; margin-top: 32px; color: #333; }
-        h3 { font-size: 17px; margin-top: 24px; color: #444; }
-        p, li { color: #555; }
-        .footer { text-align: center; margin-top: 24px; font-size: 13px; color: #999; }
-        a { color: #007aff; text-decoration: none; }
+        h1 { font-size: 28px; margin-top: 0; color: var(--text); }
+        h2 { font-size: 20px; margin-top: 36px; color: var(--text-heading); }
+        h3 { font-size: 16px; margin-top: 24px; color: var(--text-heading); }
+        p, li { color: var(--text-soft); }
+        ul { padding-left: 22px; }
+        li { margin-bottom: 8px; }
+        .footer { text-align: center; margin-top: 24px; font-size: 13px; color: var(--muted); }
+        a { color: var(--link); text-decoration: none; }
         a:hover { text-decoration: underline; }
+        @media (max-width: 520px) {
+            body { padding: 20px 14px; }
+            .card { padding: 26px 22px; }
+        }
     </style>
 </head>
 <body>
     <div class="card">
         <h1>Terms of Use (EULA)</h1>
-        <p><strong>Last updated:</strong> July 27, 2026</p>
+        <p><strong>Last updated:</strong> October 4, 2026</p>
 
         <h2>1. Acceptance of Terms</h2>
-        <p>By downloading, installing, or using Lumi ("the App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+        <p>By downloading, installing, or using Lumi ("the App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree, please do not use the App.</p>
 
-        <h2>2. Description of the App</h2>
-        <p>Lumi is a personal AI assistant and task management application. It allows you to:</p>
+        <h2>2. What Lumi Is</h2>
+        <p>Lumi is a personal task and project assistant for iPhone and iPad. It lets you:</p>
         <ul>
-            <li>Create and manage tasks, projects, and reminders</li>
-            <li>Chat with an AI assistant to organize your life</li>
-            <li>Sync data across your devices via iCloud</li>
-            <li>Subscribe to Lumi Pro for extended AI access</li>
+            <li>Capture tasks, projects, notes, and deadlines by typing or speaking them into a conversation</li>
+            <li>Let the App file each item into Today, Upcoming, Anytime, or Projects on its own</li>
+            <li>Set reminders, including repeating ones, delivered as notifications on your device</li>
+            <li>Keep a written conversation with the App that you can search later</li>
+            <li>Optionally sync across your own devices through your personal iCloud account</li>
         </ul>
+        <p>The App's language understanding runs entirely on your device. It does not use a remote AI service.</p>
 
-        <h2>3. Subscription</h2>
+        <h2>3. No Account, No Purchases</h2>
+        <p>Lumi requires no account and no sign-up. The App contains no in-app purchases, no subscriptions, and no paid tiers. There is nothing to buy and no billing to manage.</p>
 
-        <h3>3.1 Free Trial</h3>
-        <p>New users receive a <strong>7-day free trial</strong> with access to 300,000 AI tokens. During the trial, you can use all features of the app including AI chat, task management, iCloud sync, and smart reminders.</p>
+        <h2>4. Your Data</h2>
+        <p>Your tasks, projects, and conversations are stored on your device, and optionally in your own iCloud account if you enable sync. We do not receive them. You are the only party who can read or delete them. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
 
-        <h3>3.2 Lumi Pro Subscription</h3>
-        <p>After the trial, you may subscribe to <strong>Lumi Pro</strong>, a <strong>1-month auto-renewable subscription</strong>, to continue using AI chat. Lumi Pro includes:</p>
-        <ul>
-            <li>5,000,000 AI tokens per billing month</li>
-            <li>Unlimited AI chat access</li>
-            <li>All premium features</li>
-        </ul>
-        <p>Subscription pricing is displayed in the app and may vary by region. The current U.S. price is <strong>$9.99/month</strong>.</p>
+        <h2>5. How the App Interprets What You Write</h2>
+        <p>Lumi reads what you type in order to file it — extracting a title, a date, a project, a recurrence rule. Its interpretation is automated and will sometimes be wrong.</p>
+        <p>You are responsible for reviewing what the App files, and for correcting it. Every action the App takes on your behalf can be undone from within the App. Please check items before acting on them.</p>
 
-        <h3>3.3 Auto-Renewal</h3>
-        <p>Your subscription automatically renews at the end of each billing period unless canceled at least 24 hours before the end of the current period. Payment will be charged to your Apple ID account. You can manage or cancel your subscription at any time in <strong>Settings &gt; Apple ID &gt; Subscriptions</strong> on your device.</p>
-
-        <h3>3.4 Refund Policy</h3>
-        <p>All subscription purchases are processed by Apple. Refund requests must be submitted directly to Apple through <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a>.</p>
-
-        <h2>4. User Conduct</h2>
+        <h2>6. Acceptable Use</h2>
         <p>You agree not to:</p>
         <ul>
-            <li>Use the AI chat feature for illegal purposes or to generate harmful content</li>
-            <li>Attempt to bypass subscription or trial restrictions</li>
-            <li>Reverse engineer, decompile, or disassemble the App</li>
-            <li>Use automated scripts or bots to interact with the App</li>
+            <li>Reverse engineer, decompile, or disassemble the App except where that restriction is prohibited by law</li>
+            <li>Redistribute, resell, or sublicense the App</li>
+            <li>Use the App to store or distribute unlawful material</li>
+            <li>Interfere with the App's operation</li>
         </ul>
-
-        <h2>5. AI-Generated Content</h2>
-        <p>The AI chat feature generates content based on your inputs using third-party AI models (currently DeepSeek). We do not guarantee the accuracy, completeness, or appropriateness of AI-generated content. AI responses should not be relied upon for critical decisions without verification. You are solely responsible for any actions you take based on AI-generated suggestions.</p>
-
-        <h2>6. Third-Party Services</h2>
-        <p>The App integrates with third-party services including:</p>
-        <ul>
-            <li><strong>DeepSeek AI API</strong> — for generating AI responses in chat</li>
-            <li><strong>Apple iCloud (CloudKit)</strong> — for device-to-device sync</li>
-            <li><strong>Apple StoreKit</strong> — for subscription management and payment processing</li>
-        </ul>
-        <p>We are not responsible for the availability, accuracy, or practices of these third-party services. Use of these services is subject to their respective terms and privacy policies.</p>
 
         <h2>7. Intellectual Property</h2>
-        <p>The App, including its design, code, branding, and original content, is owned by Wandering Architect and is protected by intellectual property laws. You are granted a limited, non-exclusive, non-transferable license to use the App for personal, non-commercial purposes.</p>
+        <p>The App, including its software, design, and branding, is owned by Wandering Architect and protected by intellectual property laws. You are granted a limited, non-exclusive, non-transferable license to use it on Apple devices for your personal, non-commercial use, in accordance with the App Store Terms of Service.</p>
 
-        <h2>8. Disclaimer of Warranties</h2>
-        <p>The App is provided on an <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis, without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that:</p>
+        <h2>8. Third-Party Services</h2>
+        <p>The App integrates no third-party service. It does not call any remote API and contains no third-party AI, advertising, or analytics SDK. If you enable iCloud sync, Apple's iCloud service is involved, governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
+
+        <h2>9. Disclaimer of Warranties</h2>
+        <p>The App is provided on an <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis, without warranties of any kind, either express or implied, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement. Apple is not a party to these Terms. We do not warrant that:</p>
         <ul>
             <li>The App will be uninterrupted, secure, or error-free</li>
-            <li>AI-generated responses will be accurate or complete</li>
-            <li>Third-party services will always be available</li>
+            <li>The App will correctly interpret what you write</li>
+            <li>Reminders will be delivered at the time you expect</li>
+            <li>Data will be preserved through an iOS upgrade, a device change, or a sync failure</li>
         </ul>
 
-        <h2>9. Limitation of Liability</h2>
-        <p>To the fullest extent permitted by law, Wandering Architect shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or relating to your use of the App, including but not limited to lost data, lost profits, or business interruption.</p>
+        <h2>10. Limitation of Liability</h2>
+        <p>To the fullest extent permitted by law, Wandering Architect is not liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the App, including lost data, lost profits, or business interruption. In no event shall our liability exceed the amount you paid for the App, which is zero.</p>
+        <p>Nothing in these Terms limits rights you have under applicable consumer law in your jurisdiction.</p>
 
-        <h2>10. Termination</h2>
-        <p>We may suspend or terminate your access to the App at any time if you violate these Terms. You may terminate your use at any time by deleting the App and canceling any active subscriptions through Apple.</p>
+        <h2>11. Indemnity</h2>
+        <p>You agree to indemnify Wandering Architect against any claim arising from your misuse of the App or breach of these Terms, to the extent permitted by law.</p>
 
-        <h2>11. Changes to Terms</h2>
-        <p>We reserve the right to modify these Terms at any time. Changes will be posted on this page, and the "Last updated" date will be revised. Continued use of the App after changes constitutes acceptance of the new Terms.</p>
+        <h2>12. Termination</h2>
+        <p>You may stop using the App at any time by deleting it from your device, which also deletes the local data. We may suspend or terminate access if you materially breach these Terms.</p>
 
-        <h2>12. Governing Law</h2>
-        <p>These Terms are governed by the laws of the People's Republic of China, without regard to its conflict of law provisions.</p>
+        <h2>13. Changes to These Terms</h2>
+        <p>We may update these Terms. The "Last updated" date above will be revised and the new version posted on this page. Continued use after a change means you accept the updated Terms.</p>
 
-        <h2>13. Contact</h2>
-        <p>If you have any questions about these Terms, please contact us at:</p>
-        <p><strong>Email:</strong> zhoufan97@qq.com</p>
+        <h2>14. Severability</h2>
+        <p>If any provision of these Terms is held unenforceable, the remaining provisions stay in effect.</p>
+
+        <h2>15. Governing Law</h2>
+        <p>These Terms are governed by the laws of the People's Republic of China, without regard to its conflict of law provisions. Mandatory consumer protections under the laws of your country of residence still apply where required.</p>
+
+        <h2>16. Contact</h2>
+        <p>Questions about these Terms can be sent to <a href="mailto:zhoufan97@qq.com">zhoufan97@qq.com</a>.</p>
     </div>
 
     <div class="footer">
-        <a href="./">← Back to Home</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a>
+        <a href="./">← Back to Home</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="support.html">Support</a>
     </div>
 </body>
 </html>
